@@ -64,6 +64,37 @@
   "__v": 0
          }
 ```
+## Struggle options
+- Request
+  ```json  
+    {
+    "Struggleoption" : "2-8 weeks"
+    }
+  ```
+- Response
+  ```json
+     {
+    "message": "Struggle option updated successfully",
+    "user": {
+        "_id": "64781a1123f6fb42aa26bc20",
+        "id": "64781a1123f6fb42aa26bc1c",
+        "Struggleoption": "2-8 weeks",
+        "__v": 0
+    }
+}
+    ```
+ - Database
+ ``` json
+     {
+  "_id": {
+    "$oid": "64781a1123f6fb42aa26bc20"
+   },
+  "id": "64781a1123f6fb42aa26bc1c",
+  "Struggleoption": "2-8 weeks",
+  "__v": 0
+ }
+ ```
+ 
 
 
   
