@@ -94,7 +94,70 @@
   "__v": 0
  }
  ```
- 
+ ## Wakeup
+  - Request
+    ```json
+      {
+    "wakeup" : "1677208496"
+   }```
+ - Response
+  ```json
+  
+    "message": "Wakeup updated successfully",
+    "user": {
+        "_id": "64781fddfc128ab3a6f1308d",
+        "id": "64781fddfc128ab3a6f13087",
+        "__v": 0,
+        "WakeUpTime": "1677208496"
+    }
+ }
+  ```
+- dATABASE
+ ``` JSON
+  {
+  "_id": {
+    "$oid": "64781ce257649a36416d0685"
+  },
+  "id": "64781ce257649a36416d067f",
+  "WakeUpTime": {
+    "$date": "2023-12-31T18:30:00.000Z"
+  },
+  "__v": 0
+}
+```
+## Sleep hours needed
+ - request
+  ```json
+   {
+    "hoursNeeded" : "8"
+  }
+  ```
+ - Response
+    ```json
+       {
+    "message": "Hours needed entry created successfully",
+    "hoursNeeded": {
+        "id": "6478217f6799c075ddcb8468",
+        "hoursNeeded": "8",
+        "_id": "6478c12ce31f13b0d1b6ba4e",
+        "__v": 0
+    }
+   }
+   ```
+  - Database
+  ```
+    {
+  "_id": {
+    "$oid": "64784b57fd25c44f0c819383"
+  },
+  "id": "6478217f6799c075ddcb8468",
+  "hoursNeeded": "8",
+  "__v": 0
+}
+```
+
+
+
 
 
   
