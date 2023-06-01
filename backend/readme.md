@@ -1,52 +1,36 @@
 ### REST API Interaction Flows
-
 ## NickName
-  - Request body
-    {
-    <br>
-    "nickname" : "rahul",
-    <br>
-    "password" :  "pass",
-    <br>
-    "hoursNeeded" : "8"
-    <br>
-    }
+- Request
+```json
+{
+  "nickname": "ram",
+  "password": "pass"
+}
 
+```
 - Response
-  {
-  <br>
+```json
+{
     "message": "User created successfully",
-    <br>
     "user": {
-    <br>
-        "nickname": "rahul",
-        <br>
+        "nickname": "ram",
         "password": "pass",
-        <br>
-        "_id": "64789e5ee31f13b0d1b6ba25",
-        <br>
+        "_id": "6478a84ee31f13b0d1b6ba3f",
         "__v": 0
-        <br>
     }
-    <br>
 }
+```
 - Database
-   {
-   <br>
-  "_id": {
-  <br>
-    "$oid": "64789e5ee31f13b0d1b6ba25"
-    <br>
-  },
-  <br>
-  "nickname": "rahul",
-  <br>
+```json
+/** 
+* Paste one or more documents here
+*/
+{
+  "nickname": "ram",
   "password": "pass",
-  <br>
   "__v": 0
-  <br>
 }
-## ActivityChanges
+```
 
 
 
