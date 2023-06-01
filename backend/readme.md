@@ -22,16 +22,48 @@
 ```
 - Database
 ```json
-/** 
-* Paste one or more documents here
-*/
+
 {
   "nickname": "ram",
   "password": "pass",
   "__v": 0
 }
 ```
-
+## Activity
+   - Request
+   ```json
+   {
+    "changesOptions" : ["I would go to sleep easily"]
+}
+```
+- Response
+  ```json
+  {
+    "message": "Sleep changes options updated successfully",
+    "user": {
+        "_id": "64781835ad4f0940d8f70b16",
+        "id": "64781835ad4f0940d8f70b14",
+        "changesOptions": [
+            "I would go to sleep easily"
+            
+        ],
+        "__v": 0
+    }
+     }
+  ```
+ - Database
+  ```json
+ {
+  "_id": {
+    "$oid": "64781835ad4f0940d8f70b16"
+  },
+  "id": "64781835ad4f0940d8f70b14",
+  "changesOptions": [
+    "I would go to sleep easily",
+  ],
+  "__v": 0
+         }
+```
 
 
   
