@@ -18,3 +18,5 @@ public:
         return ans;
     }
 };
+The time complexity of the isValidBST function in the given code is O(N), where N is the number of nodes in the binary tree.In the check function, the time complexity is also O(N), where N is the number of nodes in the subtree rooted at the current node., the total time complexity of the algorithm is still O(N)
+The space complexity of the algorithm is O(H), where H is the height of the binary tree.
